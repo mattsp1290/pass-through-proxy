@@ -1,0 +1,7 @@
+[package]
+name = "pass-through-proxy"
+version = "0.1.0"
+authors = ["Matt Spurlin <matt.spurlin@datadoghq.com>"]
+edition = "2018"
+
+[dependencies]
