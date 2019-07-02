@@ -3,6 +3,7 @@ FROM alpine:latest
 RUN apk add -u crystal shards libc-dev
 COPY shard.yml .
 COPY ./src ./src
+RUN shards install
 RUN crystal build --release --static ./src/pass-through-proxy.cr -o /bin/pass-through-proxy
 
 FROM traefik:v2.0-alpine

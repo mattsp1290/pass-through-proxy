@@ -2,4 +2,4 @@
 
 /pass-through-proxy
 
-/entrypoint.sh traefik $@
+#/entrypoint.sh traefik $@
